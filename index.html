@@ -1,0 +1,785 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A description of the website for better SEO">
+  <meta name="keywords" content="Keywords, for, better, SEO">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css" rel="stylesheet" />
+  <title>Revivie-Fitness</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <div class="container"
+    style="background-image:url(hero-1.jpg) ; background-size: cover; color: beige; max-width: 100%; height: 1000px;">
+
+    <nav class="navbar navbar-expand-lg fixed-top" style="margin-top: -3%;">
+      <div class="container-fluid" >
+        <a class="navbar-brand" href="#" style="width: 15%;"><img src="logo-main.png" width="80%"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="font-size: 1rem; margin-left: 8%;">
+            <li class="nav-item" style="margin-right: 3px;">
+              <a class="nav-link active" style="color: white;" aria-current="page"
+                href="i.html"><strong>Home</strong></a>
+            </li>
+            <li class="nav-item" style="margin-right: 3px;">
+              <a class="nav-link " style="color: white;" aria-current="page" href="About_Us.html">About_Us</a>
+            </li>
+            <li class="nav-item" style="margin-right: 3px;">
+              <a class="nav-link " style="color: white;" aria-current="page" href="Classes.html">Classes</a>
+            </li>
+            <li class="nav-item" style="margin-right: 3px;">
+              <a class="nav-link " style="color: white;" aria-current="page" href="Our_Plan.html">Our_Plan</a>
+            </li>
+            <li class="nav-item" style="margin-right: 3px;">
+              <a class="nav-link " style="color: white;" aria-current="page" href="Our_Team.html">Our_Team</a>
+            </li>
+            <li class="nav-item" style="margin-right: 3px;">
+              <a class="nav-link " style="color: white;" aria-current="page" href="Register_Now.html">Register_Now</a>
+            </li>
+
+          </ul>
+          <form class="d-flex" role="search" style="margin-left: 8%;">
+            <input class="form-control me-2" type="search" aria-label="Search" placeholder="Search"
+              style="background-color: #f6f6f64f; border: none; width: 50%; color: white;">
+            <button class="btn" style="color: white;" type="submit">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+                viewBox="0 0 16 16">
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+              </svg>
+            </button>
+            <span style="margin-left: 1px; color: rgb(126, 120, 120); font-weight: bolder;">|</span>
+          </form>
+        </div>
+        
+        
+      
+        
+        
+
+        <div class="mx-2">
+          <button class="btn" data-bs-toggle="modal" data-bs-target="#loginModal" style="background-color: #c1c1c140; border-radius: 20%; margin-right: 1px;  font-weight: bold;">Login</button>
+          <button class="btn" data-bs-toggle="modal" data-bs-target="#signupModal" style="background-color: #c1c1c140; border-radius: 20%; margin-left: 1px; font-weight: bold;" >SignUp</button>
+        </div>
+
+        
+      </nav>
+
+   
+
+<!--Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog" >
+    <div class="modal-content"  style="background-color: #8d8989;">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel" style="color: black; font-weight: bolder; ">Login to Revive Fitness</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="row mb-3">
+            <label for="inputEmail3" class="col-sm-2 col-form-label"  style="color: black;">Email</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" id="inputEmail3">
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="inputPassword3" class="col-sm-2 col-form-label" style="color: black;">Password</label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="inputPassword3">
+            </div>
+          </div>
+          
+          <div class="row mb-3">
+            <div class="col-sm-10 offset-sm-2">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck1">
+                <label class="form-check-label" for="gridCheck1">
+                  Remember Me
+                </label>
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!--SignUp Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content"  style="background-color: black;">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel"   style="color: black; font-weight: bolder;">Join Revive Fitness</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="row mb-3">
+            <label for="inputEmail3" class="col-sm-2 col-form-label" style="color: black;">Email</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" id="inputEmail3">
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="inputPassword3" class="col-sm-2 col-form-label" style="color: black;">Password</label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="inputPassword3">
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="inputPassword3" class="col-sm-2 col-form-label">Confirm Password</label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="inputPassword3">
+            </div>
+          </div>
+          
+          <div class="row mb-3">
+            <div class="col-sm-10 offset-sm-2">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck1">
+                <label class="form-check-label" for="gridCheck1">
+                  Remember Me
+                </label>
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Join Now</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div">
+      <h4 style="margin-left: 25%; font-size: 2rem; padding: 23%;"><b>SHAPE YOUR BODY</b></h4>
+      <h1 style=" margin-left: 48%;margin-top: -23%; font-size: 4rem; "><b>BE STRONG</b></h1>
+      <H1 style="margin-left: 48%;margin-top: -1%; font-size: 4rem;"> <B>TRAINING HARD</B></H1>
+  </div>
+  <div>
+    <button type="button" class="btn "
+      style=" margin-left: 48% ; margin-right: 15.5%; margin-top: -38%; font-size: 1.5rem; color: white; background-color: #c37e00;"><a
+        href="Virtual_Gym.mp4" target="_blank" style="text-decoration: none; color: white;"><b>Virtual Tour </b><b
+          style="text-decoration: underline;"> :></b></a></button>
+  </div>
+
+  </div>
+
+  <div style="height: 1500px; background-color:  black; margin-top: -2%; ">
+
+    <div style="text-align: center; color: #c37e00; font-size: 1rem; padding: 9%; text-decoration: underline;">
+      <h3>WHY CHOOSE US?</h3>
+    </div>
+
+    <div style="text-align: center; font-size: 4rem; color: white; margin-top: -9%;">
+      <h1><b>PUSH YOUR LIMITS FORWARD</b></h1>
+    </div>
+
+    <div class="Container">
+
+      <div class="row my-5">
+
+        <div class="card col-5" style="background-color:  #131313; margin-left: 3%; ">
+          <img src="Capture1.JPG" class="card-img-top" alt="error" style="width: 40%; margin: 5% 30%;">
+          <div class="card-body" style="color: white; text-align: center;">
+            <h5 class="card-title"
+              style="margin-top: -5%; color: #c37e00; text-decoration: underline; font-weight: bolder;">Modern Equipment
+            </h5>
+            <p class="card-text" style="margin-top: 8%;">Welcome to Revive Fitness, where modern fitness meets
+              cutting-edge cardio and strength
+              equipment, creating a revolutionary workout experience for you.</p>
+
+          </div>
+        </div>
+
+        <div class="col-1">
+
+        </div>
+
+        <div class="card col-5" style="background-color:  #131313;  margin-right: 1%;">
+          <img src="Capture2.JPG" class="card-img-top" alt="error" style="width: 40%; margin: 5% 30%;">
+          <div class="card-body" style="color: white; text-align: center;">
+            <h5 class="card-title"
+              style="margin-top: -5%;  color: #c37e00; text-decoration: underline; font-weight: bolder;">Healthy
+              nutrition plan</h5>
+            <p class="card-text" style="margin-top: 8%;">Welcome Fuel your fitness journey with Revive Fitness preferred
+              healthy nutrition plan,
+              promoting balance and nourishment for optimal well-being.</p>
+
+          </div>
+        </div>
+
+
+      </div>
+
+
+      <div class="row my-3">
+
+        <div class="card col-5" style="background-color:   #131313; margin-left: 3%; ">
+          <img src="Capture3.JPG" class="card-img-top" alt="error" style="width: 40%;  margin: 5% 30%;">
+          <div class="card-body" style="color: white; text-align: center;">
+            <h5 class="card-title"
+              style="margin-top: -5%;  color: #c37e00; text-decoration: underline; font-weight: bolder;"> Professional
+              training plan</h5>
+            <p class="card-text" style="margin-top: 8%;">Revive Fitness specializes in a personalized professional
+              training plan, ensuring
+              optimal results on your fitness journey.</p>
+
+          </div>
+        </div>
+
+        <div class="col-1">
+
+        </div>
+
+        <div class="card col-5" style="background-color:   #131313;  margin-right: 1%;">
+          <img src="Capture4.JPG" class="card-img-top" alt="error" style="width: 40%;  margin: 5% 30%;">
+          <div class="card-body" style="color: white; text-align: center;">
+            <h5 class="card-title"
+              style="margin-top: -5%;  color: #c37e00; text-decoration: underline; font-weight: bolder;">Unique to your
+              needs</h5>
+            <p class="card-text" style="margin-top: 8%;">Revive Fitness crafts a training approach uniquely tailored to
+              your needs, ensuring a
+              personalized and effective fitness journey.</p>
+
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+
+
+    <div style="height: 1400px; background-color:  black; margin-top: 5%;">
+
+      <div style="text-align: center; color: #c37e00; font-size: 1rem; padding: 10%; text-decoration: underline;margin-top: 0%;">
+        <h3>OUR CLASS</h3>
+      </div>
+  
+      <div style="text-align: center; font-size: 4rem; color: white; margin-top: -10%;">
+        <h1><b>WHAT WE CAN OFFER</b></h1>
+      </div>
+  
+      <div class="Container">
+  
+        <div class="row my-5">
+  
+          <div class="card col-3" style="background-color:  #131313; margin-left: 5%; ">
+            <img src="class-1.jpg" class="card-img-top" alt="error" style="max-width: 100%; height: 68%;">
+            <div class="line"
+              style="height: 2%; background-color: gray; border-bottom: 3px solid gray; border-top: 1px solid gray;">
+            </div>
+            <div class="card-body" style="color: white; text-align: center;  height: 30%; text-align: left;">
+              <h5 class="card-title" style="color: #c37e00; text-decoration-line: underline;">STRENGTH</h5>
+              <h3 class="card-text"><b>WEIGHTLIFTING</b><a href="weight lifting.mp4" target="_blank"
+                  style="text-decoration: none; color: white; text-align: right  ;font-weight: bolder; font-size: 2rem ;margin-left: 7%; text-decoration-line: underline;">></a>
+              </h3>
+  
+            </div>
+          </div>
+  
+          <div class="card col-3" style="background-color:  #131313; margin-left: 7%; margin-right: 7%; ">
+            <img src="class-2.jpg" class="card-img-top" alt="error" style="max-width: 100%;">
+            <div class="line"
+              style="height: 2%; background-color: gray; border-bottom: 1px solid gray; border-top: 1px solid gray;">
+            </div>
+            <div class="card-body" style="color: white; text-align: center;  height: 30%; text-align: left;">
+              <h5 class="card-title" style="color: #c37e00; text-decoration-line: underline;">CARDIO</h5>
+              <h3 class="card-text"><b>YOGA</b><a href="yoga.mp4" target="_blank"
+                  style="text-decoration: none; text-align: right ; color: white ;font-weight: bolder; font-size: 2rem ;margin-left: 57%; text-decoration-line: underline;">></a>
+                </h4>
+  
+            </div>
+          </div>
+  
+          <div class="card col-3" style="background-color:  #131313;  margin-right: 5%;">
+            <img src="class-3.jpg" class="card-img-top" alt="error" style="max-width: 100%;">
+            <div class="line"
+              style="height: 2%; background-color: gray; border-bottom: 1px solid gray; border-top: 1px solid gray;">
+            </div>
+            <div class="card-body" style="color: white; text-align: center;  height: 30%; text-align: left;">
+              <h5 class="card-title" style="color: #c37e00; text-decoration-line: underline;">STRENGTH</h5>
+              <h4 class="card-text"><b>KETTLEBELL</b><a href="Kettlebell.mp4" target="_blank"
+                  style="text-decoration: none; color: white; text-align: right ;font-weight: bolder; font-size: 2rem ;margin-left: 37%; text-decoration-line: underline;">></a>
+              </h4>
+  
+            </div>
+          </div>
+  
+  
+        </div>
+  
+  
+        <div class="row my-3">
+  
+          <div class="card col-4" style="background-color:  #131313; margin-left: 8%; ">
+            <img src="class-4.jpg" class="card-img-top" alt="error" style="max-width: 100%;">
+            <div class="line"
+              style="height: 2%; background-color: gray; border-bottom: 6px solid gray; border-top: 1px solid gray;">
+            </div>
+            <div class="card-body" style="color: white; text-align: center;  height: 30%; text-align: left;">
+              <h5 class="card-title" style="color: #c37e00; text-decoration-line: underline;">CARDIO</h5>
+              <h3 class="card-text"><b>INDOOR CYCLING</b><a href="Cycling.mp4" target="_blank"
+                  style="text-decoration: none; color: white; text-align: right ;font-weight: bolder; font-size: 2rem ;margin-left: 27%; text-decoration-line: underline;">></a>
+              </h3>
+  
+            </div>
+          </div>
+  
+          <div class="card col-2"
+            style=" margin-left: 1%; margin-right: 1%; background-color:  black;  border-style: none; ">
+  
+          </div>
+  
+          <div class="card col-4" style="background-color:  #131313;  margin-right: 6%; ">
+            <img src="class-5.jpg" class="card-img-top" alt="error" style="max-width: 100%;">
+            <div class="line"
+              style="height: 2%; background-color: gray; border-bottom: 6px solid gray; border-top: 1px solid gray;">
+            </div>
+            <div class="card-body" style="color: white; text-align: center;  height: 30%; text-align: left;">
+              <h5 class="card-title" style="color: #c37e00; text-decoration-line: underline;">TRAINING</h5>
+              <h3 class="card-text"><b>BOXING</b><a href="boxing.mp4" target="_blank"
+                  style="text-decoration: none; color: white; text-align: right ;font-weight: bolder; font-size: 2rem ;margin-left: 57%; text-decoration-line: underline;">></a>
+              </h3>
+  
+            </div>
+          </div>
+  
+        </div>
+  
+  
+      </div>
+  
+  
+
+
+
+
+
+      <div style="height: 1000px; background-color:  black; margin-top: 6%;">
+
+
+
+
+
+        <div style="text-align: center; color: #c37e00; font-size: 1rem; padding: 5%; text-decoration: underline;">
+          <h3>OUR PLAN</h3>
+        </div>
+
+        <div style="text-align: center; font-size: 4rem; color: white; margin-top: -5%;">
+          <h1><b>CHOOSE YOUR PRICING PLAN</b></h1>
+        </div>
+
+
+
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center" style="margin-top: 4%;">
+
+          <div class="col" style="width: 30%; margin-left: 4%;">
+            <div class="card mb-4 rounded-3 shadow-sm" style="background-color:   #131313;;  height: 500px;">
+              <img src="icon-2.png" class="card-img-top" alt="error"
+                style="width: 25%; height: 15%; border-radius: 100%; margin: 5% 40%; background-color: #a5a5a5a6; ">
+              <div class="card-header py-3" style="height: 20%;">
+                <h4 class="my-0 fw-normal" style="text-decoration: underline; color: white;"><b>Standard</b></h4>
+                <h1 class="card-title pricing-card-title" style="color: #c37e00; font-weight: bolder;">$15<small
+                    class="fw-light" style="color: #c37e00; font-weight: bolder;">/mo</small></h1>
+              </div>
+              <div class="card-body" style="height: 40%;">
+                <ul class="list-unstyled mt-3 mb-4" style="text-align: left; color: white; margin-left: 2%; ">
+                  <li type="square">Basic Access to Gym Facilities and Equipment.</li>
+                  <li type="square">Initial Fitness Assessment.</li>
+                  <li type="square">Personalized Workout Plan.</li>
+                </ul>
+              </div>
+              <div class="card-body" style="height: 15%;">
+                <button type="button" class="w-100 btn btn-lg btn-dark"><b>Enroll Now</b></button>
+              </div>
+            </div>
+          </div>
+          <div class="col" style="width: 30%; margin-left: 1%;  margin-right: 1%;">
+            <div class="card mb-4 rounded-3 shadow-sm" style="background-color:   #131313; height: 500px;">
+              <img src="icon-2.png" class="card-img-top" alt="error"
+                style="width: 25%; height: 15%; border-radius: 100%; margin: 5% 40%; background-color: #a5a5a5a6; ">
+              <div class="card-header py-3" style="height: 20%;">
+                <h4 class="my-0 fw-normal" style="text-decoration: underline; color: white;"><b>Pro</b></h4>
+                <h1 class="card-title pricing-card-title" style="color: #c37e00; font-weight: bolder;">$30<small
+                    class=" fw-light" style="color: #c37e00; font-weight: bolder;">/mo</small></h1>
+              </div>
+              <div class="card-body" style="height: 40%;">
+                <ul class="list-unstyled mt-3 mb-4" style="text-align: left; color: white; margin-left: 2%;">
+                  <li type="square">Full Access to Gym Facilities and Equipment.</li>
+                  <li type="square">Advanced Fitness Assessment with Nutrition Consultation.</li>
+                  <li type="square">Personalized Workout Plan.</li>
+                  <li type="square">One complimentary group fitness class per week.</li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <button type="button" class="w-100 btn btn-lg btn-dark"><b>Enroll Now</b></button>
+              </div>
+            </div>
+          </div>
+          <div class="col" style="width: 30%; margin-right: 1%;">
+            <div class="card mb-4 rounded-3 shadow-sm" style="background-color:   #131313;  height: 500px; ">
+              <img src="icon-2.png" class="card-img-top" alt="error"
+                style="width: 25%; height: 15%; border-radius: 100%; margin: 5% 40%; background-color: #a5a5a5a6; ">
+              <div class="card-header py-3" style="height: 20%;">
+                <h4 class="my-0 fw-normal" style="text-decoration: underline; color: white;"><b>Enterprise</b></h4>
+                <h1 class="card-title pricing-card-title" style=" color: #c37e00; font-weight: bolder;">$40<small
+                    class=" fw-light" style="color: #c37e00; font-weight: bolder;">/mo</small></h1>
+              </div>
+              <div class="card-body" style="height: 40%;">
+                <ul class="list-unstyled mt-3 mb-4" style="text-align: left; color: white; margin-left: 2%;">
+                  <li type="square">Full Access to Gym Facilities and Equipment.</li>
+                  <li type="square">Comprehensive Fitness Assessment with Nutrition Consultation.</li>
+                  <li type="square">Personalized Workout Plan with weekly training sessions.</li>
+                  <li type="square">Exclusive discounts on merchandise and additional services.</li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <button type="button" class="w-100 btn btn-lg btn-dark"><b>Enroll Now</b></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <div style="height: 940px; background-color:  black; margin-top: 37%;">
+
+      <div style="text-align: center; color: #c37e00; font-size: 1rem; padding: 5%; text-decoration: underline;">
+        <h3>OUR TEAM</h3>
+      </div>
+
+      <div style="text-align: center; font-size: 4rem; color: white; margin-top: -5%;">
+        <h1><b>TRAIN WITH EXPERTS</b></h1>
+      </div>
+
+      <div class="Container">
+
+        <div class="row" style="margin-top: 5%;">
+
+          <div class="col" style="margin-left: 1%;">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+              style=" background-color: #131313;">
+              <div class="col p-4 d-flex flex-column position-static">
+                <h3><strong class="d-inline-block mb-2" style="text-decoration: underline; color: #c37e00;">Analis Cruz
+                  </strong></h3>
+
+                <p class="card-text mb-auto" style=" color: white;">Dynamic coach empowering clients through challenging
+                  high-intensity
+                  training.</p>
+                <div class="line"
+                  style="height: 2%; background-color: gray; border-bottom: 4px solid gray; border-top: 1px solid gray; margin-top: 15%;">
+                </div>
+                <a href="https://www.instagram.com/analiscruzx/?hl=en"  target="_blank"
+                  class="icon-link gap-1 icon-link-hover stretched-link"
+                  style="margin-top: 5%; text-decoration: none; color: white; text-decoration: underline; font-style: italic;">
+                  <b>Explore :></b>
+                  <svg class="bi">
+                    <use xlink:href="#chevron-right"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <img src="team-1.jpg" class="bd-placeholder-img" width="200" height="250" alt="">
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col" style="margin-left: 1%; margin-right: 1%;">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+              style=" background-color: #131313;">
+              <div class="col p-4 d-flex flex-column position-static">
+                <h3><strong class="d-inline-block mb-2" style="text-decoration: underline; color: #c37e00;">
+                    Anna Archer</strong></h3>
+
+                <p class="card-text mb-auto" style=" color: white;">Certified nutritionist promoting overall health and
+                  vitality with fitness expertise.</p>
+                <div class="line"
+                  style="height: 2%; background-color: gray; border-bottom: 4px solid gray; border-top: 1px solid gray; margin-top: 15%;">
+                </div>
+                <a href="https://www.instagram.com/annaarcherfitness/?hl=en"  target="_blank"
+                  class="icon-link gap-1 icon-link-hover stretched-link"
+                  style="margin-top: 5%; text-decoration: none; color: white; text-decoration: underline; font-style: italic;">
+                  <b>Explore :></b>
+                  <svg class="bi">
+                    <use xlink:href="#chevron-right"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <img src="team-2.jpg" class="bd-placeholder-img" width="190" height="250" alt="">
+
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col" style="margin-right: 1%;">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+              style=" background-color: #131313;">
+              <div class="col p-4 d-flex flex-column position-static">
+                <h3><strong class="d-inline-block mb-2" style="text-decoration: underline; color: #c37e00;">
+                    Rabea Mahmood</strong></h3>
+
+                <p class="card-text mb-auto" style=" color: white;">Energetic group fitness specialist fostering support
+                  for all fitness levels.</p>
+                <div class="line"
+                  style="height: 2%; background-color: gray; border-bottom: 4px solid gray; border-top: 1px solid gray; margin-top: 15%;">
+                </div>
+                <a href="https://www.instagram.com/rabea_mahmood_qureshi/?hl=en"  target="_blank"
+                  class="icon-link gap-1 icon-link-hover stretched-link"
+                  style="margin-top: 5%; text-decoration: none; color: white; text-decoration: underline; font-style: italic;">
+                  <b>Explore :></b>
+                  <svg class="bi">
+                    <use xlink:href="#chevron-right"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <img src="team-3.jpg" class="bd-placeholder-img" width="200" height="250" alt="">
+
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+
+        <div class="row my-4">
+
+          <div class="col" style="margin-left: 1%;">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+              style=" background-color: #131313;">
+              <div class="col p-4 d-flex flex-column position-static">
+                <h3><strong class="d-inline-block mb-2" style="text-decoration: underline; color: #c37e00;">
+                    Ali Khan </strong></h3>
+
+                <p class="card-text mb-auto" style=" color: white;">Fitness expert inspiring peak performance with
+                  strength and functional training</p>
+                <div class="line"
+                  style="height: 2%; background-color: gray; border-bottom: 4px solid gray; border-top: 1px solid gray; margin-top: 15%;">
+                </div>
+                <a href="https://www.instagram.com/ali_khan_fitness/?hl=en"  target="_blank"
+                  class="icon-link gap-1 icon-link-hover stretched-link"
+                  style="margin-top: 5%; text-decoration: none; color: white; text-decoration: underline; font-style: italic;">
+                  <b>Explore :></b>
+                  <svg class="bi">
+                    <use xlink:href="#chevron-right"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <img src="team-4.jpg" class="bd-placeholder-img" width="224" height="242" alt="">
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col" style="margin-right: 1%; margin-right: 1%;">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+              style=" background-color: #131313;">
+              <div class="col p-4 d-flex flex-column position-static">
+                <h3><strong class="d-inline-block mb-2" style="text-decoration: underline; color: #c37e00;">Suffyan
+                    Ansari
+                  </strong></h3>
+
+                <p class="card-text mb-auto" style=" color: white;">Dedicated trainer crafting personalized workout
+                  plans for tailored success.</p>
+                <div class="line"
+                  style="height: 2%; background-color: gray; border-bottom: 4px solid gray; border-top: 1px solid gray; margin-top: 15%;">
+                </div>
+                <a href="https://www.instagram.com/suffyanansarii/?hl=en"  target="_blank"
+                  class="icon-link gap-1 icon-link-hover stretched-link"
+                  style="margin-top: 5%; text-decoration: none; color: white; text-decoration: underline; font-style: italic;">
+                  <b>Explore :></b>
+                  <svg class="bi">
+                    <use xlink:href="#chevron-right"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <img src="team-5.jpg" class="bd-placeholder-img" width="200" height="230" alt="">
+
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col" style="margin-right: 1%;">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+              style=" background-color: #131313;">
+              <div class="col p-4 d-flex flex-column position-static">
+                <h3><strong class="d-inline-block mb-2" style="text-decoration: underline; color: #c37e00;">ATTA KHAN
+                  </strong></h3>
+
+                <p class="card-text mb-auto" style=" color: white;">Holistic wellness advocate integrating mindfulness
+                  for a balanced approach.</p>
+                <div class="line"
+                  style="height: 2%; background-color: gray; border-bottom: 4px solid gray; border-top: 1px solid gray; margin-top: 15%;">
+                </div>
+                <a href="https://www.instagram.com/atta_khan_fitness_coach/?hl=en"  target="_blank"
+                  class="icon-link gap-1 icon-link-hover stretched-link"
+                  style="margin-top: 5%; text-decoration: none; color: white; text-decoration: underline; font-style: italic;">
+                  <b>Explore :></b>
+                  <svg class="bi">
+                    <use xlink:href="#chevron-right"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <img src="team-6.jpg" class="bd-placeholder-img" width="200" height="230" alt="">
+
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+
+
+
+
+
+
+
+        <div style="height: 780px; background-color:  black;">
+
+          <div style="text-align: center; color: #c37e00; font-size: 1rem; padding: 5%; text-decoration: underline;">
+            <h3>REGISTER NOW</h3>
+          </div>
+
+          <div style="text-align: center; font-size: 4rem; color: white; margin-top: -5%;">
+            <h1><b>BUILD YOUR BEST BODY SHAPE TODAY</b></h1>
+          </div>
+
+
+          <div
+            style="max-width: 500px; margin: auto; padding: 20px; box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1); background-color: #131313;">
+            <form action="non.php">
+              <div class="row mb-3"> <label for="name" class="col-sm-2 col-form-label"
+                  style="color: white;">Name</label>
+                <div class="col-sm-10"> <input type="text" class="form-control" id="name" name="name"
+                    placeholder="Enter your name"> </div>
+              </div>
+              <div class="row mb-3"> <label for="nic" class="col-sm-2 col-form-label" style="color: white;">NIC</label>
+                <div class="col-sm-10"> <input type="text" class="form-control" id="nic" name="nic"
+                    placeholder="Enter your NIC number"> </div>
+              </div>
+              <div class="row mb-3"> <label for="weight" class="col-sm-2 col-form-label"
+                  style="color: white;">Weight</label>
+                <div class="col-sm-10"> <input type="number" class="form-control" id="weight" name="weight"
+                    placeholder="Enter your weight"> </div>
+              </div>
+              <div class="row mb-3"> <label for="height" class="col-sm-2 col-form-label"
+                  style="color: white;">Height</label>
+                <div class="col-sm-10"> <input type="number" class="form-control" id="height" name="height"
+                    placeholder="Enter your height"> </div>
+              </div>
+              <div class="row mb-3"> <label for="phone" class="col-sm-2 col-form-label" style="color: white;">Cell:
+                </label>
+                <div class="col-sm-10"> <input type="tel" class="form-control" id="phone" name="phone"
+                    placeholder="Enter your phone number"> </div>
+              </div>
+              <div class="row mb-3"> <label for="email" class="col-sm-2 col-form-label"
+                  style="color: white;">Email</label>
+                <div class="col-sm-10"> <input type="email" class="form-control" id="email" name="email" value=""
+                    placeholder="Enter your email"> </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-sm-10 offset-sm-2"> <button type="submit" class="btn"
+                    style="background-color: #c37e00; color: white; font-weight: bolder; width: 40%; height: 100%; margin-left: 25%; ">Submit
+                    Now</button>
+                </div>
+              </div>
+            </form>
+
+          </div>
+          <footer style="margin-top: 7%; background-color: #131313;">
+            <div class="footer-container">
+              <div class="footer-item" style="width: 24%; float: left; margin-left: 1% ;">
+                <h4 style="font-weight: bolder; color: #c37e00; text-decoration: underline;">Follow Us</h4>
+                <div class="social-icons"> <a href="https://www.facebook.com" target="_blank"><img src="facebook.png"
+                      style="width: 4%; margin: auto 4%;" alt="Facebook" /></a> <a href="https://www.twitter.com"
+                    target="_blank"><img src="Twitter.png" style="width: 7%; margin: auto 4%;" alt="Twitter" /></a> <a
+                    href="https://www.instagram.com" target="_blank"><img src="Instagram.png"
+                      style="width: 7%; margin: auto 4%;" alt="Instagram" /></a> <a href="https://www.Youtube.com"
+                    target="_blank"><img src="Youtube.png" style="width: 7%; margin: auto 4%;" alt="Youtube" /></a>
+                </div>
+              </div>
+              <div class="footer-item" style="width: 23%; float: left; ">
+                <h4 style="text-decoration: underline; font-weight: bolder; color: #c37e00; ">Contact Us</h4>
+                <p><a href="tel:051-4441112" target="_blank"
+                    style="text-decoration: none; color: white;  font-weight: bolder;"><img src="Contact.png"
+                      style="width: 7%; margin: auto 3%;" alt="Contact Us">051-4441112</a></p>
+              </div>
+              <div class="footer-item" style="width: 25%; float: left;">
+                <h4 style="text-decoration: underline; font-weight: bolder; color: #c37e00;">Address</h4>
+                <p><a href="https://www.google.com/maps/place/Commercial+Market,+Rawalpindi" target="_blank"
+                    style=" font-weight: bolder; text-decoration: none; color: white;"><img src="Address.png"
+                      style="width: 7%; margin: auto 3%;" alt="Address">Commercial Market,
+                    Rawalpindi</a></p>
+              </div>
+              <div class="footer-item" style="width: 24%; float: left; margin-right: 1%;">
+                <h4 style="text-decoration: underline; font-weight: bolder; color: #c37e00;">Email</h4>
+                <p><a href="mailto:reviviefitness@gmail.com" target="_blank"
+                    style="text-decoration: none; color: white; font-weight: bolder;"><img src="Email.png"
+                      style="width: 7%; margin: auto 3%;" alt="Email">reviviefitness@gmail.com</a></p>
+              </div>
+              <div class="copyright"
+                style="clear: both; background-color: #707070; width: 40%; height: 40%;margin: auto; border-radius: 30%;">
+                <p style="text-align: center; color: white;">Copyright © 2023 All rights reserved</p>
+              </div>
+            </div>
+          </footer>
+        </div>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+          crossorigin="anonymous"></script>
+        <script>
+          document.addEventListener('DOMContentLoaded', function () {
+            var dropdownTrigger = new mdb.Dropdown(document.querySelector('.dropdown-trigger'));
+          });
+        </script>
+
+</body>
+
+</html>
